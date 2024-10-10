@@ -1,6 +1,9 @@
 import express from 'express';
 import { infoRouter } from './src/info/info.controller.js';
 import cors from 'cors';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 
@@ -25,4 +28,3 @@ async function main() {
 }
 
 main()
-
